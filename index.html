@@ -17,9 +17,9 @@
         <p class="title">
             شــركـة ثقــة لخــدمـات الـدفـع الإلكـترونـي و الحــلول المــتكامـلة ش . م . م
         </p>
+        <h3>استمارة طلب وظيفة</h3>
     </header>
     <div class="container">
-        <h3>استمارة طلب وظيفة</h3>
         <form action="php/insert.php" method="post">
             <div class="employee">
                 <span>خاص بالموظف</span>
@@ -79,6 +79,22 @@
                         <input type="text" id="number" name="number" class="input-group" placeholder="" required>
                         <label for="number">رقــم الهــاتـف</label>
                     </div>
+                    <div class="field">
+                        <input type="file" id="Type of certificate" name="Type of certificate" class="input-group" placeholder="">
+                        <label for="Type of certificate">رفــع صـورة بطــاقة الـرقم القـومـي</label>
+                    </div>
+                    <div class="field">
+                        <input type="file" id="Type of certificate" name="Type of certificate" class="input-group" placeholder="">
+                        <label for="Type of certificate">رفــع صــورة شخــصيـة</label>
+                    </div>
+                    <div class="field">
+                        <input type="file" id="Type of certificate" name="Type of certificate" class="input-group" placeholder="">
+                        <label for="Type of certificate">رفــع صـورة البطـاقــة / امــام</label>
+                    </div>
+                    <div class="field">
+                        <input type="file" id="Type of certificate" name="Type of certificate" class="input-group" placeholder="">
+                        <label for="Type of certificate">رفــع صـورة البطـاقــة / خلــف</label>
+                    </div>
                 </div>
             </div>
             <div class="employee">
@@ -124,7 +140,7 @@
                     </div>
                     <div class="field">
                         <input type="file" id="Type of certificate" name="Type of certificate" class="input-group" placeholder="">
-                        <label for="Type of certificate">رفع المرفق</label>
+                        <label for="Type of certificate">رفــع صـورة شهــادة الـدورات التـدربيــة</label>
                     </div>
                 </div>
             </div>  
@@ -140,8 +156,12 @@
                         <label for="Employer">جهـه العمـــل</label>
                     </div>
                     <div class="field">
-                        <input type="text" id="Period from/to" name="Period from/to" class="input-group" placeholder="" required>
-                        <label for="Period from/to">الفــترة مــن / إلـي</label>
+                        <input type="date" id="data" name="data" class="input-group" placeholder="" required>
+                        <label for="Date">الفتــرة مــن</label>
+                    </div>
+                    <div class="field">
+                        <input type="date" id="data" name="data" class="input-group" placeholder="" required>
+                        <label for="Date">إلــي</label>
                     </div>
                     <div class="field">
                         <input type="text" id="Salary" name="Salary" class="input-group" placeholder="" required>
@@ -161,7 +181,7 @@
                     </div>
                     <div class="field">
                         <input type="file" id="Reason for leaving work" name="attached_1" class="input-group" placeholder="" required>
-                        <label for="Reason for leaving work">رفــع المــرفـق</label>
+                        <label for="Reason for leaving work">رفــع شهــادة الخبــرة العمليــة</label>
                     </div>
                     <div class="field w-75">
                         <textarea type="text" id="Reason for leaving work" name="Reason for leaving work" class="input-group" placeholder="" style="height: 200px;"></textarea>
@@ -181,28 +201,24 @@
                         <label for="Employer">جهـه العمـــل</label>
                     </div>
                     <div class="field">
-                        <input type="text" id="Period from/to" name="Period from/to" class="input-group" placeholder="" required>
-                        <label for="Period from/to">الفــترة مــن / إلـي</label>
+                        <input type="date" id="data" name="data" class="input-group" placeholder="" required>
+                        <label for="Date">الفتــرة مــن</label>
+                    </div>
+                    <div class="field">
+                        <input type="date" id="data" name="data" class="input-group" placeholder="" required>
+                        <label for="Date">إلــي</label>
                     </div>
                     <div class="field">
                         <input type="text" id="Salary" name="Salary" class="input-group" placeholder="" required>
                         <label for="Salary">الــراتـب</label>
                     </div>
                     <div class="field">
-                        <input type="text" id="Reason for leaving work" name="attached_2" class="input-group" placeholder="" required>
+                        <input type="text" id="Reason for leaving work" name="Reason for leaving work" class="input-group" placeholder="" required>
                         <label for="Reason for leaving work">سبــب تـرك الـعـمل</label>
                     </div>
                     <div class="field">
-                        <select id="Nationality" name="Nationality">
-                            <option value=""></option>
-                            <option value="no">لا</option>
-                            <option value="yes">نعم</option>
-                        </select>
-                        <label for="Nationality">هـل تعــمل فـي الوقــت الحـالـي</label>
-                    </div>
-                    <div class="field">
-                        <input type="file" id="Reason for leaving work" name="Reason for leaving work" class="input-group" placeholder="" required>
-                        <label for="Reason for leaving work">رفــع المــرفـق</label>
+                        <input type="file"    id="Reason for leaving work" name="attached_1" class="input-group" placeholder="" required>
+                        <label for="Reason for leaving work">رفــع شهــادة الخبــرة العمليــة</label>
                     </div>
                     <div class="field w-75">
                         <textarea type="text" id="Reason for leaving work" name="Reason for leaving work" class="input-group" placeholder="" style="height: 200px;"></textarea>
@@ -222,28 +238,24 @@
                         <label for="Employer">جهـه العمـــل</label>
                     </div>
                     <div class="field">
-                        <input type="text" id="Period from/to" name="Period from/to" class="input-group" placeholder="" required>
-                        <label for="Period from/to">الفــترة مــن / إلـي</label>
+                        <input type="date" id="data" name="data" class="input-group" placeholder="" required>
+                        <label for="Date">الفتــرة مــن</label>
+                    </div>
+                    <div class="field">
+                        <input type="date" id="data" name="data" class="input-group" placeholder="" required>
+                        <label for="Date">إلــي</label>
                     </div>
                     <div class="field">
                         <input type="text" id="Salary" name="Salary" class="input-group" placeholder="" required>
                         <label for="Salary">الــراتـب</label>
                     </div>
                     <div class="field">
-                        <input type="text" id="Reason for leaving work" name="attached_3" class="input-group" placeholder="" required>
+                        <input type="text" id="Reason for leaving work" name="Reason for leaving work" class="input-group" placeholder="" required>
                         <label for="Reason for leaving work">سبــب تـرك الـعـمل</label>
                     </div>
                     <div class="field">
-                        <select id="Nationality" name="Nationality">
-                            <option value=""></option>
-                            <option value="no">لا</option>
-                            <option value="yes">نعم</option>
-                        </select>
-                        <label for="Nationality">هـل تعــمل فـي الوقــت الحـالـي</label>
-                    </div>
-                    <div class="field">
-                        <input type="file" id="Reason for leaving work" name="Reason for leaving work" class="input-group" placeholder="" required>
-                        <label for="Reason for leaving work">رفــع المــرفـق</label>
+                        <input type="file"    id="Reason for leaving work" name="attached_1" class="input-group" placeholder="" required>
+                        <label for="Reason for leaving work">رفــع شهــادة الخبــرة العمليــة</label>
                     </div>
                     <div class="field w-75">
                         <textarea type="text" id="Reason for leaving work" name="Reason for leaving work" class="input-group" placeholder="" style="height: 200px;"></textarea>
@@ -263,28 +275,24 @@
                         <label for="Employer">جهـه العمـــل</label>
                     </div>
                     <div class="field">
-                        <input type="text" id="Period from/to" name="Period from/to" class="input-group" placeholder="" required>
-                        <label for="Period from/to">الفــترة مــن / إلـي</label>
+                        <input type="date" id="data" name="data" class="input-group" placeholder="" required>
+                        <label for="Date">الفتــرة مــن</label>
+                    </div>
+                    <div class="field">
+                        <input type="date" id="data" name="data" class="input-group" placeholder="" required>
+                        <label for="Date">إلــي</label>
                     </div>
                     <div class="field">
                         <input type="text" id="Salary" name="Salary" class="input-group" placeholder="" required>
                         <label for="Salary">الــراتـب</label>
                     </div>
                     <div class="field">
-                        <input type="text" id="Reason for leaving work" name="attached_4" class="input-group" placeholder="" required>
+                        <input type="text" id="Reason for leaving work" name="Reason for leaving work" class="input-group" placeholder="" required>
                         <label for="Reason for leaving work">سبــب تـرك الـعـمل</label>
                     </div>
                     <div class="field">
-                        <select id="Nationality" name="Nationality">
-                            <option value=""></option>
-                            <option value="no">لا</option>
-                            <option value="yes">نعم</option>
-                        </select>
-                        <label for="Nationality">هـل تعــمل فـي الوقــت الحـالـي</label>
-                    </div>
-                    <div class="field">
-                        <input type="file" id="Reason for leaving work" name="Reason for leaving work" class="input-group" placeholder="" required>
-                        <label for="Reason for leaving work">رفــع المــرفـق</label>
+                        <input type="file"    id="Reason for leaving work" name="attached_1" class="input-group" placeholder="" required>
+                        <label for="Reason for leaving work">رفــع شهــادة الخبــرة العمليــة</label>
                     </div>
                     <div class="field w-75">
                         <textarea type="text" id="Reason for leaving work" name="Reason for leaving work" class="input-group" placeholder="" style="height: 200px;"></textarea>
