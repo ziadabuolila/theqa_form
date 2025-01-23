@@ -29,6 +29,10 @@ header{
     border-bottom: 2px solid var(--second-color);
     text-align: center;
     background: #fff;
+    padding-bottom: 20px;
+    position: sticky;
+    top: 0;
+    z-index: 1;
 }
 header > img {
     width: 145px;
@@ -37,7 +41,7 @@ header > p{
     font-weight: bold;
 }
 /* body of the form */
-.container > h3{
+header > h3{
     margin: 15px auto 0;
     width: fit-content;
     padding-bottom: 15px;
@@ -45,9 +49,9 @@ header > p{
     align-items: center;
     justify-content: center;
     position: relative;
-    color: #fff;
+    color: #000;
 }
-.container > h3::before{
+header > h3::before{
     content: '';
     display: block;
     height: 5px;
